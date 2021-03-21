@@ -41,10 +41,10 @@
 
 // ============= ДЛЯ РАЗРАБОТЧИКОВ =============
 #define LED_PIN 2             // пин ленты
-#define BTN_PIN 4
-#define BTN_PIN_2 5
-#define BTN_PIN_3 6
-#define BTN_PIN_4 7
+#define BTN_PIN_PLUS 4
+#define BTN_PIN_UP 5
+#define BTN_PIN_MINUS 6
+#define BTN_PIN_DOWN 7
 #define MODE_AMOUNT 18
 #define NUM_LEDS WIDTH * HEIGHT
 #define SEGMENTS 1            // диодов в одном "пикселе" (для создания матрицы из кусков ленты)
@@ -58,10 +58,10 @@
 // ------------------- ТИПЫ --------------------
 CRGB leds[NUM_LEDS];
 //timerMinim timeTimer(3000);
-GButton touch1(BTN_PIN, LOW_PULL, NORM_OPEN);
-GButton touch2(BTN_PIN_2, LOW_PULL, NORM_OPEN);
-GButton touch3(BTN_PIN_3, LOW_PULL, NORM_OPEN);
-GButton touch4(BTN_PIN_4, LOW_PULL, NORM_OPEN);
+GButton touch1(BTN_PIN_PLUS, LOW_PULL, NORM_OPEN);
+GButton touch2(BTN_PIN_UP, LOW_PULL, NORM_OPEN);
+GButton touch3(BTN_PIN_MINUS, LOW_PULL, NORM_OPEN);
+GButton touch4(BTN_PIN_DOWN, LOW_PULL, NORM_OPEN);
 
 // ----------------- ПЕРЕМЕННЫЕ ------------------
 
